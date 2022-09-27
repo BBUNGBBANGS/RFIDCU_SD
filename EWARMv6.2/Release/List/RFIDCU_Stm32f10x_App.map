@@ -1,0 +1,988 @@
+###############################################################################
+#
+# IAR ELF Linker V7.70.1.11437/W32 for ARM                23/Sep/2022  17:04:32
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Exe\RFIDCU_Stm32f10x_App.out
+#    Map file     =  
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\List\RFIDCU_Stm32f10x_App.map
+#    Command line =  
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\AppLog.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\AppMain.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\CAN.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\ccsbcs.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\Common.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\core_cm3.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\CpuRtc.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\crc.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\diskio.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\eeprom.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\fatfs.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\ff.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\ff_gen_drv.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\FlashMem.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\Front.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\grf.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\main.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\MicroSD.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\misc.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\MyTag.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\MyTpu.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\rfcom.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\rfid.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\SD_Card.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\startup_stm32f10x_cl78.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_bkp.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_can.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_dma.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_flash.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_gpio.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_it.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_pwr.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_rcc.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_rtc.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_spi.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_tim.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\stm32f10x_usart.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\syscall.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\system_stm32f10x.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\user_diskio.o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj\util.o
+#        --redirect _Printf=_PrintfFull -o
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Exe\RFIDCU_Stm32f10x_App.out
+#        --map
+#        D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\List\RFIDCU_Stm32f10x_App.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\config\linker\ST\stm32f105xC.icf" --semihosting --entry
+#        __iar_program_start --inline --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0803ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A0":                                       0x150
+  .intvec             ro code  0x08000000   0x150  startup_stm32f10x_cl78.o [1]
+                             - 0x08000150   0x150
+
+"P1":                                      0xae07
+  .text               ro code  0x08000150  0x2428  ff.o [1]
+  .text               ro code  0x08002578    0x74  diskio.o [1]
+  .text               ro code  0x080025ec   0x464  ccsbcs.o [1]
+  .text               ro code  0x08002a50    0xee  I64DivMod.o [5]
+  .text               ro code  0x08002b3e     0xa  xsprout.o [3]
+  .text               ro code  0x08002b48     0x2  I64DivZer.o [5]
+  .text               ro code  0x08002b4c  0x118a  xprintffull.o [3]
+  .text               ro code  0x08003cd6    0x20  xmbtowc.o [3]
+  .text               ro code  0x08003cf8    0x16  strchr.o [5]
+  .text               ro code  0x08003d10    0x36  strlen.o [5]
+  .text               ro code  0x08003d48    0x58  memchr.o [5]
+  .text               ro code  0x08003da0     0xa  xmbcurmax.o [3]
+  .text               ro code  0x08003dac    0xb0  xxmemxmalloc.o [3]
+  .text               ro code  0x08003e5c    0x1a  xwctomb.o [3]
+  .text               ro code  0x08003e78    0x76  ABImemcpy_unaligned.o [5]
+  .text               ro code  0x08003ef0    0x80  xxmemxfree.o [3]
+  .text               ro code  0x08003f70    0x44  xdnorm.o [4]
+  .text               ro code  0x08003fb4    0x2e  DblCmpLe.o [4]
+  .text               ro code  0x08003fe4    0x2e  DblCmpGe.o [4]
+  .text               ro code  0x08004014   0x10c  xdscale.o [4]
+  .text               ro code  0x08004120    0x58  DblToI32.o [4]
+  .text               ro code  0x08004178    0x30  I32ToDbl.o [4]
+  .text               ro code  0x080041a8   0x180  DblSub.o [4]
+  .text               ro code  0x08004328   0x1a2  DblMul.o [4]
+  .text               ro code  0x080044cc   0x256  DblDiv.o [4]
+  .text               ro code  0x08004724    0x6c  localeconv.o [3]
+  .text               ro code  0x08004790     0xe  div.o [3]
+  .text               ro code  0x080047a0    0x14  setlocale.o [3]
+  .text               ro code  0x080047b4    0x60  xencoding_sb.o [3]
+  .text               ro code  0x08004814    0x2c  xgetmemchunk.o [3]
+  .text               ro code  0x08004840    0xd4  DblAdd.o [4]
+  .text               ro code  0x08004914   0xed4  Front.o [1]
+  .text               ro code  0x080057e8   0x374  Common.o [1]
+  .text               ro code  0x08005b5c   0x560  CAN.o [1]
+  .text               ro code  0x080060bc   0x4bc  util.o [1]
+  .text               ro code  0x08006578   0x5dc  MyTpu.o [1]
+  .text               ro code  0x08006b54   0x46c  MyTag.o [1]
+  .text               ro code  0x08006fc0   0x510  CpuRtc.o [1]
+  .text               ro code  0x080074d0   0x774  AppMain.o [1]
+  .text               ro code  0x08007c44     0xc  rfid.o [1]
+  .text               ro code  0x08007c50   0x12c  stm32f10x_gpio.o [1]
+  .text               ro code  0x08007d7c   0x13a  stm32f10x_usart.o [1]
+  .text               ro code  0x08007eb8     0x6  ABImemclr.o [5]
+  .text               ro code  0x08007ec0     0x6  ABImemclr4.o [5]
+  .text               ro code  0x08007ec8   0x368  stm32f10x_can.o [1]
+  .text               ro code  0x08008230    0x2c  vsprintf.o [3]
+  .text               ro code  0x0800825c   0x498  AppLog.o [1]
+  .text               ro code  0x080086f4   0x670  grf.o [1]
+  .text               ro code  0x08008d64    0xa4  stm32f10x_rtc.o [1]
+  .text               ro code  0x08008e08    0x68  stm32f10x_bkp.o [1]
+  .text               ro code  0x08008e70     0xc  stm32f10x_pwr.o [1]
+  .text               ro code  0x08008e7c   0x174  stm32f10x_rcc.o [1]
+  .text               ro code  0x08008ff0   0x306  eeprom.o [1]
+  .text               ro code  0x080092f8     0x4  rfcom.o [1]
+  .text               ro code  0x080092fc   0x7bc  SD_Card.o [1]
+  .text               ro code  0x08009ab8    0x5e  ABImemset.o [5]
+  .text               ro code  0x08009b18    0x32  ABImemset48.o [5]
+  .text               ro code  0x08009b4c   0x11c  FlashMem.o [1]
+  .text               ro code  0x08009c68    0x18  fatfs.o [1]
+  .text               ro code  0x08009c80    0x34  sprintf.o [3]
+  .text               ro code  0x08009cb4    0x5e  stm32f10x_spi.o [1]
+  .text               ro code  0x08009d14    0x40  ff_gen_drv.o [1]
+  .text               ro code  0x08009d54   0x924  main.o [1]
+  .text               ro code  0x0800a678    0x78  misc.o [1]
+  .text               ro code  0x0800a6f0    0xf4  stm32f10x_tim.o [1]
+  .text               ro code  0x0800a7e4   0x370  stm32f10x_it.o [1]
+  .text               ro code  0x0800ab54    0xf8  system_stm32f10x.o [1]
+  .rodata             const    0x0800ac4c    0x7c  AppLog.o [1]
+  .text               ro code  0x0800acc8    0x40  zero_init3.o [5]
+  .text               ro code  0x0800ad08    0x38  packbits_init_single.o [5]
+  .text               ro code  0x0800ad40    0x28  data_init.o [5]
+  .iar.init_table     const    0x0800ad68    0x20  - Linker created -
+  .text               ro code  0x0800ad88    0x1a  cmain.o [5]
+  .text               ro code  0x0800ada2     0x4  exit.o [3]
+  .text               ro code  0x0800ada8     0xa  cexit.o [5]
+  .text               ro code  0x0800adb4    0x14  exit.o [6]
+  .text               ro code  0x0800adc8    0x14  user_diskio.o [1]
+  .text               ro code  0x0800addc    0x10  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800adec     0xc  cstartup_M.o [5]
+  .text               ro code  0x0800adf8     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800adfc     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae00     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae04     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae08     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae0c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae10     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae14     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae18     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae1c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae20     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae24     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae28     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae2c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae30     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae34     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae38     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae3c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae40     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae44     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae48     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae4c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae50     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae54     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae58     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae5c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae60     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae64     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae68     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae6c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae70     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae74     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae78     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae7c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae80     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae84     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae88     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae8c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae90     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae94     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae98     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800ae9c     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aea0     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aea4     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aea8     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aeac     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aeb0     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aeb4     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aeb8     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aebc     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aec0     0x4  startup_stm32f10x_cl78.o [1]
+  .text               ro code  0x0800aec4     0x4  startup_stm32f10x_cl78.o [1]
+  .rodata             const    0x0800aec8     0x0  zero_init3.o [5]
+  .rodata             const    0x0800aec8     0x0  packbits_init_single.o [5]
+  Initializer bytes   const    0x0800aec8    0x8f  <for P2-1>
+                             - 0x0800af57  0xae07
+
+"P2", part 1 of 3:                          0x60e
+  P2-1                         0x20000000   0x60e  <Init block>
+    .data             inited   0x20000000   0x498  SD_Card.o [1]
+    .data             inited   0x20000498     0x8  AppLog.o [1]
+    .data             inited   0x200004a0     0x8  AppLog.o [1]
+    .data             inited   0x200004a8    0x14  AppLog.o [1]
+    .data             inited   0x200004bc    0x14  Common.o [1]
+    .data             inited   0x200004d0    0x11  Front.o [1]
+    .data             inited   0x200004e4    0x14  stm32f10x_rcc.o [1]
+    .data             inited   0x200004f8    0x14  user_diskio.o [1]
+    __DLIB_PERTHREAD  inited   0x2000050c    0x88  localeconv.o [3]
+    __DLIB_PERTHREAD  inited   0x20000594    0x74  setlocale.o [3]
+    .data             inited   0x20000608     0x1  Common.o [1]
+    .data             inited   0x20000609     0x5  SD_Card.o [1]
+                             - 0x2000060e   0x60e
+
+"P2", part 2 of 3:                         0x2000
+  CSTACK                       0x20000610  0x1000  <Block>
+    CSTACK            uninit   0x20000610  0x1000  <Block tail>
+  HEAP                         0x20001610  0x1000  <Block>
+    HEAP              uninit   0x20001610  0x1000  <Block tail>
+                             - 0x20002610  0x2000
+
+"P2", part 3 of 3:                         0x1e68
+  .bss                zero     0x20002610   0xb3c  main.o [1]
+  .bss                zero     0x2000314c   0x610  CAN.o [1]
+  .bss                zero     0x2000375c   0x568  grf.o [1]
+  .bss                zero     0x20003cc4   0x468  ff.o [1]
+  .bss                zero     0x2000412c   0x190  CAN.o [1]
+  .bss                zero     0x200042bc    0x44  CAN.o [1]
+  .bss                zero     0x20004300    0x44  rfid.o [1]
+  .bss                zero     0x20004344    0x44  rfid.o [1]
+  .bss                zero     0x20004388    0x38  Front.o [1]
+  .bss                zero     0x200043c0    0x24  MyTpu.o [1]
+  .bss                zero     0x200043e4    0x20  ff.o [1]
+  .bss                zero     0x20004404    0x15  Front.o [1]
+  .bss                zero     0x20004419     0x2  CpuRtc.o [1]
+  .bss                zero     0x2000441b     0x1  AppLog.o [1]
+  .bss                zero     0x2000441c    0x10  rfid.o [1]
+  .bss                zero     0x2000442c     0xc  CpuRtc.o [1]
+  .bss                zero     0x20004438     0xc  ff_gen_drv.o [1]
+  .bss                zero     0x20004444     0x8  AppLog.o [1]
+  .bss                zero     0x2000444c     0x8  fatfs.o [1]
+  .bss                zero     0x20004454     0x8  grf.o [1]
+  .bss                zero     0x2000445c     0x8  xxmemxmalloc.o [3]
+  .bss                zero     0x20004464     0x4  main.o [1]
+  .bss                zero     0x20004468     0x4  main.o [1]
+  .bss                zero     0x2000446c     0x4  util.o [1]
+  .bss                zero     0x20004470     0x4  xgetmemchunk.o [3]
+  .bss                zero     0x20004474     0x1  Common.o [1]
+  .bss                zero     0x20004475     0x1  main.o [1]
+  .bss                zero     0x20004476     0x1  main.o [1]
+  .bss                zero     0x20004477     0x1  rfid.o [1]
+                             - 0x20004478  0x1e68
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1e68:
+          0x20002610  0x1e68
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x8f (9% of destination):
+          0x0800aec8    0x8f
+    1 destination range, total size 0x60e:
+          0x20000000   0x60e
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj: [1]
+    AppLog.o                    1 176      127       45
+    AppMain.o                   1 908
+    CAN.o                       1 376             2 020
+    Common.o                      884        2       22
+    CpuRtc.o                    1 296                14
+    FlashMem.o                    284
+    Front.o                     3 796        2       94
+    MyTag.o                     1 132
+    MyTpu.o                     1 500                36
+    SD_Card.o                   1 980      109    1 181
+    ccsbcs.o                    1 124
+    diskio.o                      116
+    eeprom.o                      774
+    fatfs.o                        24                 8
+    ff.o                        9 256             1 160
+    ff_gen_drv.o                   64                12
+    grf.o                       1 648             1 392
+    main.o                      2 340             2 886
+    misc.o                        120
+    rfcom.o                         4
+    rfid.o                         12               153
+    startup_stm32f10x_cl78.o      560
+    stm32f10x_bkp.o               104
+    stm32f10x_can.o               872
+    stm32f10x_gpio.o              300
+    stm32f10x_it.o                880
+    stm32f10x_pwr.o                12
+    stm32f10x_rcc.o               372        2       20
+    stm32f10x_rtc.o               164
+    stm32f10x_spi.o                94
+    stm32f10x_tim.o               244
+    stm32f10x_usart.o             314
+    system_stm32f10x.o            248
+    user_diskio.o                  20        2       20
+    util.o                      1 212                 4
+    ---------------------------------------------------
+    Total:                     36 210      244    9 067
+
+command line: [2]
+    ---------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    div.o                          14
+    exit.o                          4
+    localeconv.o                  108       12      136
+    setlocale.o                    20       11      116
+    sprintf.o                      52
+    vsprintf.o                     44
+    xencoding_sb.o                 96
+    xgetmemchunk.o                 44                 4
+    xmbcurmax.o                    10
+    xmbtowc.o                      32
+    xprintffull.o               4 490
+    xsprout.o                      10
+    xwctomb.o                      26
+    xxmemxfree.o                  128
+    xxmemxmalloc.o                176                 8
+    ---------------------------------------------------
+    Total:                      5 254       23      264
+
+m7M_tl.a: [4]
+    DblAdd.o                      212
+    DblCmpGe.o                     46
+    DblCmpLe.o                     46
+    DblDiv.o                      598
+    DblMul.o                      418
+    DblSub.o                      384
+    DblToI32.o                     88
+    I32ToDbl.o                     48
+    xdnorm.o                       68
+    xdscale.o                     268
+    ---------------------------------------------------
+    Total:                      2 176
+
+rt7M_tl.a: [5]
+    ABImemclr.o                     6
+    ABImemclr4.o                    6
+    ABImemcpy_unaligned.o         118
+    ABImemset.o                    94
+    ABImemset48.o                  50
+    I64DivMod.o                   238
+    I64DivZer.o                     2
+    cexit.o                        10
+    cmain.o                        26
+    cstartup_M.o                   12
+    data_init.o                    40
+    memchr.o                       88
+    packbits_init_single.o         56
+    strchr.o                       22
+    strlen.o                       54
+    zero_init3.o                   64
+    ---------------------------------------------------
+    Total:                        886
+
+shb_l.a: [6]
+    exit.o                         20
+    ---------------------------------------------------
+    Total:                         20
+
+    Gaps                           42                 3
+    Linker created                          32    8 192
+-------------------------------------------------------
+    Grand Total:               44 588      299   17 526
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x0800ad68          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0800ad88          --   Gb  - Linker created -
+?main                   0x0800ad89         Code  Gb  cmain.o [5]
+ADCPrescTable           0x200004f4    0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x200004e4   0x10  Data  Lc  stm32f10x_rcc.o [1]
+AppMain                 0x080078f3   0xc2  Code  Gb  AppMain.o [1]
+BKP_DeInit              0x08008e09   0x12  Code  Gb  stm32f10x_bkp.o [1]
+BKP_RTCOutputConfig     0x08008e21    0xa  Code  Gb  stm32f10x_bkp.o [1]
+BKP_ReadBackupRegister  0x08008e4b   0x18  Code  Gb  stm32f10x_bkp.o [1]
+BKP_TamperPinCmd        0x08008e1b    0x6  Code  Gb  stm32f10x_bkp.o [1]
+BKP_WriteBackupRegister
+                        0x08008e33   0x18  Code  Gb  stm32f10x_bkp.o [1]
+BootCount               0x20002660    0x4  Data  Gb  main.o [1]
+BusFault_Handler        0x0800a7eb    0x2  Code  Gb  stm32f10x_it.o [1]
+C2D                     0x08006291   0x26  Code  Gb  util.o [1]
+CAN1_RX0_IRQHandler     0x0800aa83   0x46  Code  Gb  stm32f10x_it.o [1]
+CAN2_RX0_IRQHandler     0x0800aac9   0x50  Code  Gb  stm32f10x_it.o [1]
+CANBusFreeCnt           0x200042f4    0x8  Data  Lc  CAN.o [1]
+CAN_AddTxMessage        0x08005da3   0x94  Code  Gb  CAN.o [1]
+CAN_CancelTransmit      0x08008149   0x24  Code  Gb  stm32f10x_can.o [1]
+CAN_DeInit              0x08007ec9   0x34  Code  Gb  stm32f10x_can.o [1]
+CAN_FilterInit          0x08007fd9   0x9c  Code  Gb  stm32f10x_can.o [1]
+CAN_GetFlagStatus       0x080081f5   0x30  Code  Gb  stm32f10x_can.o [1]
+CAN_ITConfig            0x080081e5   0x10  Code  Gb  stm32f10x_can.o [1]
+CAN_Init                0x08007efd   0xdc  Code  Gb  stm32f10x_can.o [1]
+CAN_InitVal             0x08005b5d   0x64  Code  Gb  CAN.o [1]
+CAN_IsBusOff            0x08005bc1    0xa  Code  Gb  CAN.o [1]
+CAN_ParseRxPacket       0x08005c63  0x12c  Code  Lc  CAN.o [1]
+CAN_Process             0x08006017   0x40  Code  Gb  CAN.o [1]
+CAN_RFIDCU_TestResult   0x08005f15   0x2e  Code  Gb  CAN.o [1]
+CAN_Receive             0x0800816d   0x78  Code  Gb  stm32f10x_can.o [1]
+CAN_Send_RFIDCU_Status  0x08005ec1   0x3c  Code  Gb  CAN.o [1]
+CAN_StructInit          0x08008083   0x20  Code  Gb  stm32f10x_can.o [1]
+CAN_Transmit            0x080080a3   0xa6  Code  Gb  stm32f10x_can.o [1]
+CAN_TxManager           0x08005bcb   0x98  Code  Lc  CAN.o [1]
+CAN_TxProcess           0x08005f43   0xd4  Code  Gb  CAN.o [1]
+CAN_dlk                 0x200042bc   0x14  Data  Gb  CAN.o [1]
+CAN_rx                  0x2000314c  0x610  Data  Gb  CAN.o [1]
+CAN_tx                  0x2000412c  0x190  Data  Gb  CAN.o [1]
+CHK_TOV                 0x08005891   0x16  Code  Gb  Common.o [1]
+COM_PORT                0x200004bc   0x14  Data  Gb  Common.o [1]
+COMx_CheckSendData      0x080060f9   0x52  Code  Gb  util.o [1]
+COMx_Write              0x08006171   0x36  Code  Gb  util.o [1]
+CSTACK$$Base            0x20000610          --   Gb  - Linker created -
+CSTACK$$Limit           0x20001610          --   Gb  - Linker created -
+CardType                0x2000060c    0x1  Data  Lc  SD_Card.o [1]
+Clear_WatchDog          0x080057e9   0x1e  Code  Gb  Common.o [1]
+Clear_WatchDog::bStrobe
+                        0x20000608    0x1  Data  Lc  Common.o [1]
+ComCAN                  0x200042d4   0x20  Data  Lc  CAN.o [1]
+Console_CheckSendData   0x080060bd   0x3c  Code  Gb  util.o [1]
+Console_WriteTxBuffers  0x0800614b   0x26  Code  Lc  util.o [1]
+D2C                     0x0800627b   0x16  Code  Gb  util.o [1]
+DIPSW_Read              0x080076e5   0x70  Code  Gb  AppMain.o [1]
+Date_Adjust             0x0800711d   0x1e  Code  Gb  CpuRtc.o [1]
+DebugMon_Handler        0x0800a7f1    0x2  Code  Gb  stm32f10x_it.o [1]
+DefaultSetting          0x080077dd   0x62  Code  Gb  AppMain.o [1]
+Delay_ms                0x08005855   0x1a  Code  Gb  Common.o [1]
+DipSwitch               0x20003120   0x24  Data  Gb  main.o [1]
+DirBuf                  0x20003ccc  0x260  Data  Lc  ff.o [1]
+Disable_InOutDevCsPin   0x08005907   0x1c  Code  Gb  Common.o [1]
+E2P_SaveApPowrMode      0x080077d1    0xc  Code  Gb  AppMain.o [1]
+E2P_SaveRfidAttn        0x08007791   0x1c  Code  Gb  AppMain.o [1]
+E2P_SaveRfidBeep        0x080077b9    0xc  Code  Gb  AppMain.o [1]
+E2P_SaveTagBypassMode   0x080077ad    0xc  Code  Gb  AppMain.o [1]
+E2P_Test                0x08007755   0x3c  Code  Gb  AppMain.o [1]
+EchoUart                0x080061a7   0x7e  Code  Gb  util.o [1]
+ExCvt                   0x08001670   0x80  Data  Lc  ff.o [1]
+FATFS_LinkDriver        0x08009d4d    0x4  Code  Gb  ff_gen_drv.o [1]
+FATFS_LinkDriverEx      0x08009d15   0x38  Code  Gb  ff_gen_drv.o [1]
+FND_ChangeDigit         0x08004c25  0x12a  Code  Gb  Front.o [1]
+FND_ChangeDigit::NextFndState
+                        0x200004e0    0x1  Data  Lc  Front.o [1]
+FND_ChangeDigit::bDigitTen
+                        0x200004df    0x1  Data  Lc  Front.o [1]
+FND_DisplayClockMenu    0x08004fe9   0xb4  Code  Gb  Front.o [1]
+FND_DisplayInvalid      0x080051b9    0x6  Code  Gb  Front.o [1]
+FND_DisplayMenu         0x0800509d   0xf4  Code  Gb  Front.o [1]
+FND_DisplaySet          0x080051b1    0x8  Code  Gb  Front.o [1]
+FND_DisplayTag          0x08004e49  0x174  Code  Gb  Front.o [1]
+FND_FWVer               0x08004df9   0x4e  Code  Gb  Front.o [1]
+FND_Init                0x08004c05   0x18  Code  Gb  Front.o [1]
+FND_MenuNone            0x080051a1   0x10  Code  Gb  Front.o [1]
+FND_Output4Char         0x08004d57   0xa2  Code  Gb  Front.o [1]
+FND_ReadyOutput         0x08005191   0x10  Code  Gb  Front.o [1]
+FatFs                   0x20003cc8    0x4  Data  Lc  ff.o [1]
+Files                   0x200043e4   0x20  Data  Lc  ff.o [1]
+FirstBootTimer          0x20003148    0x4  Data  Gb  main.o [1]
+FlashLogStu             0x20004444    0x8  Data  Gb  AppLog.o [1]
+FndBuf4                 0x200004d4    0x4  Data  Lc  Front.o [1]
+FndStr4                 0x200004d0    0x4  Data  Gb  Front.o [1]
+FrontBtn                0x20004464    0x4  Data  Gb  main.o [1]
+FrontBtnOld             0x20004468    0x4  Data  Gb  main.o [1]
+FrontKey                0x20004404   0x14  Data  Lc  Front.o [1]
+Fsid                    0x20003cc4    0x2  Data  Lc  ff.o [1]
+GPIO_Configuration      0x08009e27  0x196  Code  Lc  main.o [1]
+GPIO_Init               0x08007c51   0xb6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_PinRemapConfig     0x08007d27   0x50  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadInputDataBit   0x08007d07    0xe  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x08007d19    0x4  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x08007d15    0x4  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_WriteBit           0x08007d1d    0xa  Code  Gb  stm32f10x_gpio.o [1]
+GRFTypeCode             0x2000262c    0x1  Data  Gb  main.o [1]
+GRF_InitVal             0x080086f5   0x34  Code  Gb  grf.o [1]
+GRF_IsTagRspCmd         0x08008729   0x26  Code  Lc  grf.o [1]
+GRF_Process             0x08008c65   0xc2  Code  Gb  grf.o [1]
+GRF_RspAckCmd           0x080089ab   0x48  Code  Gb  grf.o [1]
+GRF_RspTagData          0x08008a2b   0xd4  Code  Gb  grf.o [1]
+GRF_Rx                  0x20003aac  0x218  Data  Lc  grf.o [1]
+GRF_Tx                  0x2000375c  0x350  Data  Lc  grf.o [1]
+GRF_TxManager           0x08008921   0x8a  Code  Lc  grf.o [1]
+GRF_dlk                 0x20004454    0x8  Data  Lc  grf.o [1]
+GRF_tagPrint            0x0800874f  0x1c4  Code  Gb  grf.o [1]
+GetTickCount            0x0800582d    0xa  Code  Gb  Common.o [1]
+HEAP$$Base              0x20001610          --   Gb  - Linker created -
+HEAP$$Limit             0x20002610          --   Gb  - Linker created -
+HardFault_Handler       0x0800a7e7    0x2  Code  Gb  stm32f10x_it.o [1]
+IDSW_Read               0x08007669   0x6c  Code  Gb  AppMain.o [1]
+IS_OP                   0x080074d1   0x26  Code  Gb  AppMain.o [1]
+IS_TIMEOUT              0x0800586f   0x22  Code  Gb  Common.o [1]
+IdSwitchOld             0x2000262a    0x1  Data  Gb  main.o [1]
+InitializeVal           0x0800a02d   0xae  Code  Lc  main.o [1]
+IsBCD                   0x08006267   0x14  Code  Gb  util.o [1]
+IsChanged_LogicInput    0x08005a23   0xb6  Code  Gb  Common.o [1]
+IsNumberString          0x08006225   0x42  Code  Gb  util.o [1]
+IsUseCANInterlock       0x0800764f    0xc  Code  Gb  AppMain.o [1]
+IsUseComMonitoring      0x0800765b    0xe  Code  Gb  AppMain.o [1]
+IsUseEnterSensor        0x08007633    0xc  Code  Gb  AppMain.o [1]
+IsUseStopSensor         0x0800763f    0xa  Code  Gb  AppMain.o [1]
+KEY_BootRead            0x08005225   0x4c  Code  Gb  Front.o [1]
+KEY_Process             0x08005271   0xae  Code  Gb  Front.o [1]
+KEY_Read                0x080051d7   0x4e  Code  Gb  Front.o [1]
+LED_CheckCAN            0x08004af9   0xbe  Code  Gb  Front.o [1]
+LED_CheckCOM            0x08004a03   0x80  Code  Gb  Front.o [1]
+LED_CheckTagRx          0x080049e1   0x22  Code  Gb  Front.o [1]
+LED_Init                0x08004915   0x5a  Code  Gb  Front.o [1]
+LED_SetRxCAN            0x08004a89   0x38  Code  Gb  Front.o [1]
+LED_SetRxCOM            0x0800496f   0x38  Code  Gb  Front.o [1]
+LED_SetTxCAN            0x08004ac1   0x38  Code  Gb  Front.o [1]
+LED_SetTxCOM            0x080049a7   0x3a  Code  Gb  Front.o [1]
+LED_Update              0x08004bb7   0x1c  Code  Gb  Front.o [1]
+LOG_GetRecPos           0x08008643   0x46  Code  Gb  AppLog.o [1]
+LOG_InitVal             0x0800863b    0x8  Code  Gb  AppLog.o [1]
+LOG_Process             0x08008689   0x30  Code  Gb  AppLog.o [1]
+LOG_printEvent          0x0800825d   0xb6  Code  Gb  AppLog.o [1]
+LOG_printTAGConfirm     0x08008313   0xe6  Code  Gb  AppLog.o [1]
+LOG_printTPUPos         0x0800842f   0xfa  Code  Gb  AppLog.o [1]
+LedCAN                  0x200043b0   0x10  Data  Lc  Front.o [1]
+LedCOM                  0x20004388   0x28  Data  Lc  Front.o [1]
+LfnBuf                  0x20003f2c  0x200  Data  Lc  ff.o [1]
+LfnOfs                  0x08001470   0x10  Data  Lc  ff.o [1]
+LoadInt                 0x080031b3   0x6e  Code  Lc  xprintffull.o [3]
+LoadSetting             0x0800783f   0xb4  Code  Gb  AppMain.o [1]
+LogDeviceSel            0x2000441b    0x1  Data  Gb  AppLog.o [1]
+LogicInput              0x200030b4   0x6c  Data  Gb  main.o [1]
+MEE_ByteRead            0x080091f7   0x4a  Code  Gb  eeprom.o [1]
+MEE_ByteWrite           0x080091c5   0x32  Code  Gb  eeprom.o [1]
+MEE_CheckACK            0x0800908f   0x50  Code  Gb  eeprom.o [1]
+MEE_Delay               0x08008ff1   0x28  Code  Gb  eeprom.o [1]
+MEE_GenerateSTART       0x0800905d   0x14  Code  Gb  eeprom.o [1]
+MEE_GenerateSTOP        0x08009071   0x1e  Code  Gb  eeprom.o [1]
+MEE_NoACK               0x080090e3   0x16  Code  Gb  eeprom.o [1]
+MEE_PageRead            0x0800929d   0x5a  Code  Gb  eeprom.o [1]
+MEE_PageWrite           0x08009255   0x3c  Code  Gb  eeprom.o [1]
+MEE_ReadData            0x08009155   0x26  Code  Gb  eeprom.o [1]
+MEE_ReadDataAck         0x08009191   0x26  Code  Gb  eeprom.o [1]
+MEE_SendData            0x08009111   0x32  Code  Gb  eeprom.o [1]
+MENU_Process            0x080054a5  0x1ba  Code  Gb  Front.o [1]
+MENU_ValueClock         0x08005329  0x172  Code  Gb  Front.o [1]
+MRTC_CalculateTime      0x0800713b   0x64  Code  Gb  CpuRtc.o [1]
+MRTC_CheckDayElapsed    0x08007303   0x3c  Code  Gb  CpuRtc.o [1]
+MRTC_CheckLeapYear      0x08006fc1   0x3c  Code  Gb  CpuRtc.o [1]
+MRTC_Configuration      0x0800733f   0x52  Code  Gb  CpuRtc.o [1]
+MRTC_DisplayDataAndTime
+                        0x0800719f   0xa0  Code  Gb  CpuRtc.o [1]
+MRTC_GetDay             0x0800703f    0x8  Code  Gb  CpuRtc.o [1]
+MRTC_GetHour            0x08007047   0x10  Code  Gb  CpuRtc.o [1]
+MRTC_GetMaxDay          0x08006ffd   0x32  Code  Gb  CpuRtc.o [1]
+MRTC_GetMin             0x08007057    0xe  Code  Gb  CpuRtc.o [1]
+MRTC_GetMonth           0x08007037    0x8  Code  Gb  CpuRtc.o [1]
+MRTC_GetSec             0x0800706f   0x10  Code  Gb  CpuRtc.o [1]
+MRTC_GetYear            0x0800702f    0x8  Code  Gb  CpuRtc.o [1]
+MRTC_IncrementDate      0x0800726d   0x90  Code  Gb  CpuRtc.o [1]
+MRTC_Init               0x080073ad   0x7c  Code  Gb  CpuRtc.o [1]
+MRTC_InitClockVal       0x0800723f   0x16  Code  Gb  CpuRtc.o [1]
+MRTC_InitVal            0x08007391    0xa  Code  Gb  CpuRtc.o [1]
+MRTC_SetMenuDate        0x0800707f   0x4e  Code  Gb  CpuRtc.o [1]
+MRTC_SetMenuTime        0x080070cd   0x22  Code  Gb  CpuRtc.o [1]
+MX_FATFS_Init           0x08009c69   0x10  Code  Gb  fatfs.o [1]
+MemManage_Handler       0x0800a7e9    0x2  Code  Gb  stm32f10x_it.o [1]
+MenuMode                0x200004d8    0x1  Data  Gb  Front.o [1]
+Mk_BeginReadTag         0x08007c45    0x2  Code  Gb  rfid.o [1]
+MyDeviceID              0x20002629    0x1  Data  Gb  main.o [1]
+MyPCBNumber             0x20002628    0x1  Data  Gb  main.o [1]
+NMI_Handler             0x0800a7e5    0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Configuration      0x08009d55   0x74  Code  Lc  main.o [1]
+NVIC_Init               0x0800a683   0x58  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x0800a679    0xa  Code  Gb  misc.o [1]
+Off_Digit2              0x08004bf3    0xc  Code  Lc  Front.o [1]
+On_Digit                0x08004bdd   0x16  Code  Lc  Front.o [1]
+OperationMode           0x2000262b    0x1  Data  Gb  main.o [1]
+PRINT_DIPSW_CONFIG      0x080074f7   0x5e  Code  Gb  AppMain.o [1]
+PRINT_FILTER_MODE       0x08007555   0x32  Code  Gb  AppMain.o [1]
+PRINT_GRF_TYPE          0x08007587   0x2c  Code  Gb  AppMain.o [1]
+PWR_BackupAccessCmd     0x08008e71    0x6  Code  Gb  stm32f10x_pwr.o [1]
+ParseRxFrameFrom_GRF    0x08008b39  0x12c  Code  Lc  grf.o [1]
+PendSV_Handler          0x0800a7f3    0x2  Code  Gb  stm32f10x_it.o [1]
+PowerFlag               0x2000060d    0x1  Data  Lc  SD_Card.o [1]
+PreInitializeOutPorts   0x08009df5   0x32  Code  Lc  main.o [1]
+RCC_APB1PeriphClockCmd  0x08008f65   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x08008f77   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08008f53   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_BackupResetCmd      0x08008f89    0x6  Code  Gb  stm32f10x_rcc.o [1]
+RCC_ClearFlag           0x08008faf    0xc  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x08008eab   0xa8  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetFlagStatus       0x08008f8f   0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_LSEConfig           0x08008e89   0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_RTCCLKCmd           0x08008ea5    0x6  Code  Gb  stm32f10x_rcc.o [1]
+RCC_RTCCLKConfig        0x08008e9f    0x6  Code  Gb  stm32f10x_rcc.o [1]
+RESET_TIMER             0x08005837    0xa  Code  Gb  Common.o [1]
+RFID_IsAlive            0x08007c4b    0x2  Code  Gb  rfid.o [1]
+RFID_IsAttnValueOkay    0x08007c49    0x2  Code  Gb  rfid.o [1]
+RFID_IsRun              0x08007c4d    0x2  Code  Gb  rfid.o [1]
+RFID_SET_POWER          0x08007c47    0x2  Code  Gb  rfid.o [1]
+RFID_SetAttn            0x08007c4f    0x2  Code  Gb  rfid.o [1]
+RFU_Process             0x080092f9    0x4  Code  Gb  rfcom.o [1]
+RTC_100msCnt            0x2000441a    0x1  Data  Gb  CpuRtc.o [1]
+RTC_ClearITPendingBit   0x08008deb    0x2  Code  Gb  stm32f10x_rtc.o [1]
+RTC_GetCounter          0x08008d77    0xc  Code  Gb  stm32f10x_rtc.o [1]
+RTC_GetITStatus         0x08008dd3   0x18  Code  Gb  stm32f10x_rtc.o [1]
+RTC_IRQHandler          0x0800a823   0x40  Code  Gb  stm32f10x_it.o [1]
+RTC_ITConfig            0x08008d65   0x12  Code  Gb  stm32f10x_rtc.o [1]
+RTC_SetCounter          0x08008d83   0x12  Code  Gb  stm32f10x_rtc.o [1]
+RTC_SetPrescaler        0x08008d95   0x14  Code  Gb  stm32f10x_rtc.o [1]
+RTC_UpdateFlag          0x20004419    0x1  Data  Gb  CpuRtc.o [1]
+RTC_WaitForLastTask     0x08008db5    0xa  Code  Gb  stm32f10x_rtc.o [1]
+RTC_WaitForSynchro      0x08008dbf   0x14  Code  Gb  stm32f10x_rtc.o [1]
+Read_Data               0x080059a9   0x34  Code  Gb  Common.o [1]
+Region$$Table$$Base     0x0800ad68          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0800ad88          --   Gb  - Linker created -
+ResetEnterSensor        0x080075b3   0x42  Code  Gb  AppMain.o [1]
+ResetStopSensor         0x080075f5   0x3e  Code  Gb  AppMain.o [1]
+SDTimer_Handler         0x080094c1   0x1a  Code  Gb  SD_Card.o [1]
+SD_Card_ChipSelect      0x080094db   0x18  Code  Lc  SD_Card.o [1]
+SD_Card_Data_Write      0x08009329   0x8e  Code  Gb  SD_Card.o [1]
+SD_Card_Data_Write::seconds_old
+                        0x20000004    0x1  Data  Lc  SD_Card.o [1]
+SD_Card_Data_Write_Time
+                        0x080093c5   0xf2  Code  Lc  SD_Card.o [1]
+SD_Card_Data_Write_Time::day_old
+                        0x20000006    0x2  Data  Lc  SD_Card.o [1]
+SD_Card_Detect          0x20000000    0x1  Data  Gb  SD_Card.o [1]
+SD_Card_FirstCall       0x20000003    0x1  Data  Gb  SD_Card.o [1]
+SD_Card_Init            0x080092fd   0x2c  Code  Gb  SD_Card.o [1]
+SD_Card_Status          0x20000002    0x1  Data  Gb  SD_Card.o [1]
+SD_Card_Writeflag       0x20000001    0x1  Data  Gb  SD_Card.o [1]
+SD_PowerOn              0x08009533   0x72  Code  Lc  SD_Card.o [1]
+SD_ReadyWait            0x08009515   0x1e  Code  Lc  SD_Card.o [1]
+SD_RxDataBlock          0x080095a5   0x44  Code  Lc  SD_Card.o [1]
+SD_SendCmd              0x0800964f   0x60  Code  Lc  SD_Card.o [1]
+SD_TxDataBlock          0x080095ed   0x62  Code  Lc  SD_Card.o [1]
+SD_disk_initialize      0x080096af  0x112  Code  Gb  SD_Card.o [1]
+SD_disk_ioctl           0x08009911  0x140  Code  Gb  SD_Card.o [1]
+SD_disk_read            0x080097db   0x7c  Code  Gb  SD_Card.o [1]
+SD_disk_status          0x080097cf    0xc  Code  Gb  SD_Card.o [1]
+SD_disk_write           0x0800985f   0xac  Code  Gb  SD_Card.o [1]
+SET_I2C_PORT            0x08009019   0x12  Code  Gb  eeprom.o [1]
+SET_OUT_EN              0x080058f3   0x14  Code  Gb  Common.o [1]
+SET_SDA_DIR             0x0800902b   0x24  Code  Lc  eeprom.o [1]
+SET_UART_TX_IT_CONFIG   0x080058a7   0x14  Code  Gb  Common.o [1]
+SPI_Cmd                 0x08009ced   0x14  Code  Gb  stm32f10x_spi.o [1]
+SPI_FLASH_BufferRead    0x08009bd9   0x44  Code  Gb  FlashMem.o [1]
+SPI_FLASH_Init          0x08009b4d   0x8c  Code  Gb  FlashMem.o [1]
+SPI_FLASH_SendByte      0x08009c23   0x30  Code  Gb  FlashMem.o [1]
+SPI_I2S_GetFlagStatus   0x08009d05    0xe  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData        0x08009d01    0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                0x08009cb5   0x38  Code  Gb  stm32f10x_spi.o [1]
+SPI_RxByte              0x080094fd   0x18  Code  Lc  SD_Card.o [1]
+SPI_TxByte              0x080094f3    0xa  Code  Lc  SD_Card.o [1]
+SVC_Handler             0x0800a7ef    0x2  Code  Gb  stm32f10x_it.o [1]
+Stat                    0x2000060b    0x1  Data  Lc  SD_Card.o [1]
+SysTick_Handler         0x0800a7f5    0x2  Code  Gb  stm32f10x_it.o [1]
+SystemInit              0x0800ab55   0xe2  Code  Gb  system_stm32f10x.o [1]
+TAG_AutoResend          0x08006dfb   0x62  Code  Gb  MyTag.o [1]
+TAG_CheckNotMyTag       0x08006d07   0x44  Code  Gb  MyTag.o [1]
+TAG_ConvToSTWJtagData   0x08006bcd  0x118  Code  Gb  MyTag.o [1]
+TAG_FixBcdError         0x08006b99   0x34  Code  Gb  MyTag.o [1]
+TAG_IsBcdError          0x08006b7d   0x1c  Code  Gb  MyTag.o [1]
+TAG_IsBypassMode        0x08006b55   0x16  Code  Gb  MyTag.o [1]
+TAG_IsDispOn            0x08006f2d   0x70  Code  Gb  MyTag.o [1]
+TAG_IsSTandWJ           0x08006b6b   0x12  Code  Lc  MyTag.o [1]
+TAG_IsTrainNoneTagRxed  0x08006dc5   0x2e  Code  Gb  MyTag.o [1]
+TAG_SetTagOnTime        0x08006ce5   0x22  Code  Gb  MyTag.o [1]
+TAG_SetTrainNoneMark    0x08006d4b   0x26  Code  Gb  MyTag.o [1]
+TAG_TrainOnResend       0x08006e5d   0xba  Code  Gb  MyTag.o [1]
+TAG_UpdatePreEnterMyTag
+                        0x08006d71   0x54  Code  Gb  MyTag.o [1]
+TIM2_IRQHandler         0x0800a7f7   0x2c  Code  Gb  stm32f10x_it.o [1]
+TIM_ClearFlag           0x0800a79d    0x2  Code  Gb  stm32f10x_tim.o [1]
+TIM_ClearITPendingBit   0x0800a7b3    0x2  Code  Gb  stm32f10x_tim.o [1]
+TIM_Cmd                 0x0800a779   0x14  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus         0x0800a79f   0x14  Code  Gb  stm32f10x_tim.o [1]
+TIM_ITConfig            0x0800a78d   0x10  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit        0x0800a6f1   0x88  Code  Gb  stm32f10x_tim.o [1]
+TPU_GET_POS             0x08006719    0x6  Code  Gb  MyTpu.o [1]
+TPU_GetEnterSensor      0x080066b3   0x34  Code  Gb  MyTpu.o [1]
+TPU_GetStopSensor       0x080066e7   0x32  Code  Gb  MyTpu.o [1]
+TPU_InitVal             0x08006579   0x20  Code  Gb  MyTpu.o [1]
+TPU_Process             0x080069d5   0x26  Code  Gb  MyTpu.o [1]
+TPU_ReadSensor          0x08006599  0x10e  Code  Lc  MyTpu.o [1]
+TPU_SAVE_POS            0x0800671f   0x40  Code  Gb  MyTpu.o [1]
+TPU_Stu                 0x200043c0    0xc  Data  Lc  MyTpu.o [1]
+TPU_UpdateTrainPosition
+                        0x08006761  0x25e  Code  Lc  MyTpu.o [1]
+TPU_UpdateTrainPosition::bChkNextState
+                        0x200043cd    0x1  Data  Lc  MyTpu.o [1]
+TagConf                 0x2000441c   0x10  Data  Gb  rfid.o [1]
+TagMode                 0x20004475    0x1  Data  Gb  main.o [1]
+Tbl                     0x080026a0  0x100  Data  Lc  ccsbcs.o [1]
+Time_Adjust             0x080070ef   0x2e  Code  Gb  CpuRtc.o [1]
+Timer                   0x2000265c    0x4  Data  Gb  main.o [1]
+Timer1                  0x20000609    0x1  Data  Gb  SD_Card.o [1]
+Timer2                  0x2000060a    0x1  Data  Gb  SD_Card.o [1]
+TimerCount              0x20002630   0x2c  Data  Gb  main.o [1]
+Toggle_RunLED           0x08005807   0x26  Code  Gb  Common.o [1]
+Toggle_RunLED::bRunLED  0x20004474    0x1  Data  Lc  Common.o [1]
+UART4_IRQHandler        0x0800a9b9   0x60  Code  Gb  stm32f10x_it.o [1]
+UART5_IRQHandler        0x0800aa23   0x60  Code  Gb  stm32f10x_it.o [1]
+UART_TxBytes            0x080058c1   0x32  Code  Gb  Common.o [1]
+USART1_IRQHandler       0x0800a863   0x5c  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler       0x0800a8bf   0x60  Code  Gb  stm32f10x_it.o [1]
+USART3_IRQHandler       0x0800a92d   0x60  Code  Gb  stm32f10x_it.o [1]
+USART_Cmd               0x08007e19   0x14  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus     0x08007e6d    0xe  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus       0x08007e7b   0x3c  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig          0x08007e2d   0x30  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x08007d7d   0x96  Code  Gb  stm32f10x_usart.o [1]
+USART_ReceiveData       0x08007e65    0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData          0x08007e5d    0x8  Code  Gb  stm32f10x_usart.o [1]
+USERPath                0x20004450    0x4  Data  Gb  fatfs.o [1]
+USER_Driver             0x200004f8   0x14  Data  Gb  user_diskio.o [1]
+USER_initialize         0x0800adc9    0x4  Code  Gb  user_diskio.o [1]
+USER_ioctl              0x0800add9    0x4  Code  Gb  user_diskio.o [1]
+USER_read               0x0800add1    0x4  Code  Gb  user_diskio.o [1]
+USER_status             0x0800adcd    0x4  Code  Gb  user_diskio.o [1]
+USER_write              0x0800add5    0x4  Code  Gb  user_diskio.o [1]
+UsageFault_Handler      0x0800a7ed    0x2  Code  Gb  stm32f10x_it.o [1]
+WRITE_XOUT              0x08005ae5   0x48  Code  Gb  Common.o [1]
+Write_Data              0x080059dd   0x46  Code  Gb  Common.o [1]
+Xout                    0x20002620    0x4  Data  Gb  main.o [1]
+XoutOld                 0x20002624    0x4  Data  Gb  main.o [1]
+_EncodingSb_Mbtowc      0x080047cf   0x30  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Mbtowc::initial
+                        0x0800480c    0x8  Data  Lc  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x080047b5   0x1a  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb::initial
+                        0x08004804    0x8  Data  Lc  xencoding_sb.o [3]
+_GenldFull              0x08003a39  0x254  Code  Lc  xprintffull.o [3]
+_IsdstStr               0x20000598    0x4  Data  Gb  setlocale.o [3]
+_LdtobFull              0x08003639  0x3fa  Code  Lc  xprintffull.o [3]
+_LitobFull              0x0800352d  0x10a  Code  Lc  xprintffull.o [3]
+_LocaleEncoding         0x080047a1    0xe  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x200005b8   0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x2000059c   0x1c  Data  Gb  setlocale.o [3]
+_Locale_aeabi_lconv     0x2000055c   0x38  Data  Gb  localeconv.o [3]
+_Locale_lconv           0x2000050c   0x50  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x08003cd7   0x20  Code  Gb  xmbtowc.o [3]
+_PrintfFull             0x08002b4d  0x650  Code  Gb  xprintffull.o [3]
+_PutcharsFull           0x08003c8d   0x2e  Code  Lc  xprintffull.o [3]
+_PutstrFull             0x08003221  0x306  Code  Lc  xprintffull.o [3]
+_SProut                 0x08002b3f    0xa  Code  Gb  xsprout.o [3]
+_TzoneStr               0x20000594    0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x08003e5d   0x1a  Code  Gb  xwctomb.o [3]
+__SET_RELEASE_DATE      0x080064f7   0x4c  Code  Gb  util.o [1]
+__SET_VER               0x080064b9   0x3e  Code  Gb  util.o [1]
+___strtok               0x2000446c    0x4  Data  Lc  util.o [1]
+__aeabi_cdcmple         0x08003fb5         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08003fe5         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x08004121         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x0800414d         Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x080044cd         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08004329         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x080041a9         Code  Gb  DblSub.o [4]
+__aeabi_i2d             0x08004179         Code  Gb  I32ToDbl.o [4]
+__aeabi_ldiv0           0x08002b49         Code  Gb  I64DivZer.o [5]
+__aeabi_memclr          0x08007eb9         Code  Gb  ABImemclr.o [5]
+__aeabi_memclr4         0x08007ec1         Code  Gb  ABImemclr4.o [5]
+__aeabi_ui2d            0x0800418d         Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x08002a51         Code  Gb  I64DivMod.o [5]
+__cmain                 0x0800ad89         Code  Gb  cmain.o [5]
+__data_Aldata           0x2000445c    0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x08004815   0x2c  Code  Gb  xgetmemchunk.o [3]
+__data_GetMemChunk::start
+                        0x20004470    0x4  Data  Lc  xgetmemchunk.o [3]
+__exit                  0x0800adb5   0x14  Code  Gb  exit.o [6]
+__iar_Dnorm             0x08003f71   0x44  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x08004015  0x10c  Code  Gb  xdscale.o [4]
+__iar_Locale_lconv_init
+                        0x08004725   0x3a  Code  Gb  localeconv.o [3]
+__iar_Mbcurmax          0x08003da1    0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x08003d49         Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x08009b19         Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x08009b19         Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x08009ab9         Code  Gb  ABImemset.o [5]
+__iar_Strchr            0x08003cf9         Code  Gb  strchr.o [5]
+__iar_d2uiz             0x08004159         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x08004841         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x0800ad41   0x28  Code  Gb  data_init.o [5]
+__iar_dsub              0x080041bd         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x080041cf         Code  Gb  DblSub.o [4]
+__iar_packbits_init_single3
+                        0x0800ad09   0x38  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x0800aded         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x08004191         Code  Gb  I32ToDbl.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x08003e79         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x08003e99         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x08003e99         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x0800acc9   0x40  Code  Gb  zero_init3.o [5]
+__vector_table          0x08000000         Data  Gb  startup_stm32f10x_cl78.o [1]
+_call_main              0x0800ad95         Code  Gb  cmain.o [5]
+_exit                   0x0800ada9         Code  Gb  cexit.o [5]
+_main                   0x0800ad9f         Code  Gb  cmain.o [5]
+bAutoTagTestRun         0x20004477    0x1  Data  Gb  rfid.o [1]
+bCANBusOffOld           0x200042d0    0x2  Data  Lc  CAN.o [1]
+bE2PROM_InitOK          0x2000262d    0x1  Data  Gb  main.o [1]
+bEnFndBlink             0x200004dc    0x1  Data  Gb  Front.o [1]
+bFirstBootFlag          0x2000262f    0x1  Data  Gb  main.o [1]
+bFndBlinkRun            0x200004dd    0x1  Data  Gb  Front.o [1]
+bFndDisplaySet          0x200004de    0x1  Data  Gb  Front.o [1]
+bLED_TestFlag           0x20004418    0x1  Data  Gb  Front.o [1]
+bRFIDBootCheckTime      0x2000262e    0x1  Data  Gb  main.o [1]
+change_bitmap           0x08000705   0x6e  Code  Lc  ff.o [1]
+check_fs                0x080017dd   0x80  Code  Lc  ff.o [1]
+chk_chr                 0x08000231   0x12  Code  Lc  ff.o [1]
+chk_lock                0x08000243   0x54  Code  Lc  ff.o [1]
+clear_lock              0x08000335   0x1a  Code  Lc  ff.o [1]
+clmt_clust              0x080009e3   0x30  Code  Lc  ff.o [1]
+clust2sect              0x0800045d   0x16  Code  Lc  ff.o [1]
+create_chain            0x080008b3  0x130  Code  Lc  ff.o [1]
+create_name             0x08001491  0x1d0  Code  Lc  ff.o [1]
+create_xdir             0x08000eb9   0x76  Code  Lc  ff.o [1]
+dec1str                 0x080062cf    0x6  Code  Gb  util.o [1]
+dec2str                 0x080062b7   0x18  Code  Gb  util.o [1]
+dec_lock                0x08000301   0x34  Code  Lc  ff.o [1]
+dir_alloc               0x08000ba9   0x52  Code  Lc  ff.o [1]
+dir_find                0x08001071  0x1ba  Code  Lc  ff.o [1]
+dir_next                0x08000aab   0xfa  Code  Lc  ff.o [1]
+dir_read                0x08000f2f  0x142  Code  Lc  ff.o [1]
+dir_register            0x0800122b  0x244  Code  Lc  ff.o [1]
+dir_sdi                 0x08000a13   0x98  Code  Lc  ff.o [1]
+disk                    0x20004438    0xc  Data  Gb  ff_gen_drv.o [1]
+disk_initialize         0x0800258b   0x1e  Code  Gb  diskio.o [1]
+disk_ioctl              0x080025d1   0x18  Code  Gb  diskio.o [1]
+disk_read               0x080025a9    0xc  Code  Gb  diskio.o [1]
+disk_status             0x08002579   0x12  Code  Gb  diskio.o [1]
+disk_write              0x080025b5    0xc  Code  Gb  diskio.o [1]
+div                     0x08004791    0xe  Code  Gb  div.o [3]
+exit                    0x0800ada3    0x4  Code  Gb  exit.o [3]
+f_close                 0x080022b7   0x2a  Code  Gb  ff.o [1]
+f_mount                 0x08001c11   0x56  Code  Gb  ff.o [1]
+f_open                  0x08001c67  0x2fc  Code  Gb  ff.o [1]
+f_printf                0x080023eb  0x172  Code  Gb  ff.o [1]
+f_sync                  0x0800218d  0x120  Code  Gb  ff.o [1]
+f_write                 0x08001fad  0x1b8  Code  Gb  ff.o [1]
+ff_convert              0x080025ed   0x3a  Code  Gb  ccsbcs.o [1]
+ff_wtoupper             0x08002629   0x76  Code  Gb  ccsbcs.o [1]
+ff_wtoupper::cvt1       0x080027a0  0x1f4  Data  Lc  ccsbcs.o [1]
+ff_wtoupper::cvt2       0x08002994   0xbc  Data  Lc  ccsbcs.o [1]
+fil                     0x20000240  0x258  Data  Gb  SD_Card.o [1]
+fill_first_frag         0x0800077b   0x2e  Code  Lc  ff.o [1]
+fill_last_frag          0x080007a9   0x2c  Code  Lc  ff.o [1]
+find_bitmap             0x08000683   0x82  Code  Lc  ff.o [1]
+find_volume             0x0800185d  0x37e  Code  Lc  ff.o [1]
+follow_path             0x080016f9   0xa6  Code  Lc  ff.o [1]
+free                    0x08003ef1   0x7a  Code  Gb  xxmemxfree.o [3]
+fs                      0x20000008  0x238  Data  Gb  SD_Card.o [1]
+gTrainPos               0x200043cc    0x1  Data  Gb  MyTpu.o [1]
+gen_numname             0x08000c53   0x80  Code  Lc  ff.o [1]
+get_fat                 0x08000475  0x124  Code  Lc  ff.o [1]
+get_ldnumber            0x0800179f   0x3e  Code  Lc  ff.o [1]
+inc_lock                0x08000297   0x6a  Code  Lc  ff.o [1]
+inout_sel               0x08005925   0x7e  Code  Gb  Common.o [1]
+ld_clust                0x08000c05   0x26  Code  Lc  ff.o [1]
+ld_dword                0x08000157   0x10  Code  Lc  ff.o [1]
+ld_qword                0x0800016d   0x44  Code  Lc  ff.o [1]
+ld_word                 0x08000151    0x6  Code  Lc  ff.o [1]
+load_obj_dir            0x08000e2d   0x32  Code  Lc  ff.o [1]
+load_xdir               0x08000d69   0xc4  Code  Lc  ff.o [1]
+localeconv              0x0800475f   0x16  Code  Gb  localeconv.o [3]
+m_Config                0x20003144    0x4  Data  Gb  main.o [1]
+m_Elapsed               0x08005841   0x14  Code  Gb  Common.o [1]
+m_PgmEnv                0x20002610   0x10  Data  Gb  main.o [1]
+main                    0x0800a0db  0x44e  Code  Gb  main.o [1]
+malloc                  0x08003dad   0xac  Code  Gb  xxmemxmalloc.o [3]
+mem_cmp                 0x08000219   0x18  Code  Lc  ff.o [1]
+mem_cpy                 0x080001ff   0x10  Code  Lc  ff.o [1]
+mem_set                 0x0800020f    0xa  Code  Lc  ff.o [1]
+memchr                  0x08003d49         Code  Gb  memchr.o [5]
+menuClock               0x200004db    0x1  Data  Gb  Front.o [1]
+menuParam               0x200004d9    0x1  Data  Gb  Front.o [1]
+menuSetVal              0x200004da    0x1  Data  Gb  Front.o [1]
+menuStringEvent         0x20000498    0x8  Data  Gb  AppLog.o [1]
+menuStringMyTag         0x200004a0    0x8  Data  Gb  AppLog.o [1]
+menuStringTrainPosition
+                        0x200004a8   0x14  Data  Gb  AppLog.o [1]
+move_window             0x08000395   0x34  Code  Lc  ff.o [1]
+myatoi                  0x08006379   0x2c  Code  Gb  util.o [1]
+mymemcmp                0x080063a5   0x1c  Code  Gb  util.o [1]
+mymemcpy                0x080063f3    0x2  Code  Gb  util.o [1]
+mynewcmp                0x080063c1   0x10  Code  Gb  util.o [1]
+myprintf                0x08006409   0x3a  Code  Gb  util.o [1]
+myputs                  0x08006443   0x12  Code  Gb  util.o [1]
+myputsln                0x08006457   0x28  Code  Gb  util.o [1]
+myputsn                 0x08006455    0x2  Code  Gb  util.o [1]
+myputxx                 0x0800647f   0x1e  Code  Gb  util.o [1]
+mystrlen                0x080063d1   0x10  Code  Gb  util.o [1]
+mystrncpy               0x080063f1    0x2  Code  Gb  util.o [1]
+mystrpbrk               0x0800630f   0x26  Code  Gb  util.o [1]
+mystrspn                0x080062e3   0x2c  Code  Gb  util.o [1]
+mystrtok                0x08006335   0x44  Code  Gb  util.o [1]
+mytoggle                0x080062d5    0xe  Code  Gb  util.o [1]
+myu8strlen              0x080063e1   0x10  Code  Gb  util.o [1]
+put_fat                 0x08000599   0xe4  Code  Lc  ff.o [1]
+putc_bfd                0x0800235f   0x46  Code  Lc  ff.o [1]
+putc_flush              0x080023a5   0x2e  Code  Lc  ff.o [1]
+putc_init               0x080023d3    0xa  Code  Lc  ff.o [1]
+remove_chain            0x080007d5   0xde  Code  Lc  ff.o [1]
+retUSER                 0x2000444c    0x1  Data  Gb  fatfs.o [1]
+rfidMinAttnValue        0x20004476    0x1  Data  Gb  main.o [1]
+s_DateStructVar         0x20004434    0x4  Data  Gb  CpuRtc.o [1]
+s_TimeStructVar         0x2000442c    0x8  Data  Gb  CpuRtc.o [1]
+send_ver_response       0x08005e37   0x8a  Code  Lc  CAN.o [1]
+sio_rx                  0x20002b8c  0x528  Data  Gb  main.o [1]
+sio_tx                  0x20002664  0x528  Data  Gb  main.o [1]
+sprintf                 0x08009c81   0x34  Code  Gb  sprintf.o [3]
+st_clust                0x08000c2b   0x28  Code  Lc  ff.o [1]
+st_dword                0x080001b9   0x10  Code  Lc  ff.o [1]
+st_qword                0x080001c9   0x36  Code  Lc  ff.o [1]
+st_word                 0x080001b1    0x8  Code  Lc  ff.o [1]
+store_xdir              0x08000e5f   0x5a  Code  Lc  ff.o [1]
+strchr                  0x08003cf9         Code  Gb  strchr.o [5]
+strlen                  0x08003d11         Code  Gb  strlen.o [5]
+sum_sfn                 0x08000cd3   0x1c  Code  Lc  ff.o [1]
+sync_fs                 0x080003c9   0x88  Code  Lc  ff.o [1]
+sync_window             0x0800034f   0x38  Code  Lc  ff.o [1]
+tagGrfOld               0x20004300   0x44  Data  Gb  rfid.o [1]
+tagTestOld              0x20004344   0x44  Data  Gb  rfid.o [1]
+timeout_can_alarm       0x200042fc    0x4  Data  Lc  CAN.o [1]
+tpuTimer                0x200043d0   0x14  Data  Lc  MyTpu.o [1]
+validate                0x08001bdb   0x36  Code  Lc  ff.o [1]
+vsprintf                0x08008231   0x2c  Code  Gb  vsprintf.o [3]
+xdir_sum                0x08000cef   0x36  Code  Lc  ff.o [1]
+xname_sum               0x08000d25   0x44  Code  Lc  ff.o [1]
+
+
+[1] = D:\1.Project_workspace\RFIDCU_SD\EWARMv6.2\Release\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  44 588 bytes of readonly  code memory
+     299 bytes of readonly  data memory
+  17 526 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

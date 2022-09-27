@@ -1,0 +1,7 @@
+---- RFID_ClearTagGrfOld Matches (6 in 5 files) ----
+AppMain.c:					RFID_ClearTagGrfOld();
+Front.c:							if(TagConf.tagBypass)RFID_ClearTagGrfOld();
+Rfid.c:* Function Name  	: RFID_ClearTagGrfOld
+Rfid.c:void RFID_ClearTagGrfOld(void)
+Rfid.h:void RFID_ClearTagGrfOld(void);
+Tag.c:			RFID_ClearTagGrfOld();
