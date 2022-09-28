@@ -18,13 +18,12 @@ FRESULT SD_Card_Status;
 uint8_t SD_Card_FirstCall = 1;
 static void SD_Card_ChipSelect(uint8_t bReq);
 static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,uint16_t hours,uint16_t minutes,uint16_t seconds,uint8_t *data,uint16_t length);
+static void RFID_Serial_Data_Clear(void);
 
 void SD_Card_Init(void)
 {
     /* FATFS Init */
     MX_FATFS_Init();
-
-    SD_Card_Detect = GPIO_ReadInputDataBit(SDCARD_DETECT_GROUP,SDCARD_DETECT_PIN);
 
     /* Mount SD Card */
     SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_ENABLE);
@@ -37,6 +36,7 @@ void SD_Card_Init(void)
 void SD_Card_Data_Write(void)
 {
     static uint8_t seconds_old;
+    static uint8_t SD_Card_Detect_Old;
     uint16_t years;
     uint8_t month,days,hours,minutes,seconds;
     uint8_t data[10] = {0,};
@@ -51,7 +51,25 @@ void SD_Card_Data_Write(void)
     seconds = MRTC_GetSec();
     if(seconds != seconds_old)
     {
-        SD_Card_Data_Write_Time(years,month,days,hours,minutes,seconds,sio_rx[COM_RFID].buffer,sio_rx[COM_RFID].write);
+        if((SD_Card_Detect_Old != SD_CARD_INSERTED)&&(SD_Card_Detect == SD_CARD_INSERTED))
+        {
+            /* Mount SD Card */
+            SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_ENABLE);
+            Delay_ms(10);
+            SD_Card_Status = f_mount(&fs, "", 0);
+            SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_DISABLE);
+            /* clear Serial buffer */
+            RFID_Serial_Data_Clear();
+            SD_Card_FirstCall = 1;
+            SD_Card_Writeflag = 0;
+            
+        }
+
+        if((SD_Card_Detect == SD_CARD_INSERTED)&&(sio_rx[COM_RFID].write > 0))
+        {
+            SD_Card_Data_Write_Time(years,month,days,hours,minutes,seconds,sio_rx[COM_RFID].buffer,sio_rx[COM_RFID].write);
+        }
+
         if((SD_Card_Detect != SD_CARD_INSERTED) || (SD_Card_Status != FR_OK))
         {
             data[0] = '1';
@@ -70,11 +88,11 @@ void SD_Card_Data_Write(void)
 
 static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,uint16_t hours,uint16_t minutes,uint16_t seconds,uint8_t *data,uint16_t length)
 {
-    static uint16_t day_old;
+    static uint16_t hours_old;
     char filename[20] = {0,};
     int8_t retType = 0;
 
-    if((day_old != day)&&(SD_Card_FirstCall == 0))
+    if((hours_old != hours)&&(SD_Card_FirstCall == 0))
     {
         SD_Card_Writeflag = 2;
     }
@@ -88,7 +106,7 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
         SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_DISABLE);
     
         SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_ENABLE);
-        retType = f_printf(&fil, "[%04d-%02d-%02d Time Log] \n",year,month,day); //로그 상단 헤더 내용 작성
+        retType = f_printf(&fil, "[%04d-%02d-%02d RFID DATA LOG] \n",year,month,day); //로그 상단 헤더 내용 작성
         if(retType == EOF)
         {
             SD_Card_Status = FR_DISK_ERR;
@@ -114,6 +132,8 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
             }
         }
         SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_DISABLE);
+        
+        RFID_Serial_Data_Clear();
     }
         
     if(SD_Card_Writeflag == 2)
@@ -124,7 +144,16 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
         SD_Card_Writeflag = 0;
     }
 
-    day_old = day;
+    hours_old = hours;
+}
+
+static void RFID_Serial_Data_Clear(void)
+{
+    for(uint8_t i = 0;i<256;i++)
+    {
+        sio_rx[COM_RFID].buffer = 0;
+    }
+    sio_rx[COM_RFID].write = 0;
 }
 
 void SDTimer_Handler(void)
