@@ -149,9 +149,9 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
 
 static void RFID_Serial_Data_Clear(void)
 {
-    for(uint8_t i = 0;i<256;i++)
+    for(uint8_t i = 0;i < 256;i++)
     {
-        sio_rx[COM_RFID].buffer = 0;
+        sio_rx[COM_RFID].buffer[i] = 0;
     }
     sio_rx[COM_RFID].write = 0;
 }
