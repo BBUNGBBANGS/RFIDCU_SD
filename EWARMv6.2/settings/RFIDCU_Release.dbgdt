@@ -19,7 +19,7 @@
           
           
           
-        <Column0>486</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>702</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Disassembly>
         <col-names>
@@ -34,12 +34,12 @@
         
         
       <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
-    <StaticWatch><expressions><item>SD_Card_Detect</item><item>SD_Card_Status</item><item>test_days</item><item>sio_rx[4]</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>244</item><item>150</item><item>100</item><item>328</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>QuickWatch</Factory></Window><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows></StaticWatch><QuickWatch><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>100</item></col-widths><QWatchHistory><item>s_DateStructVar</item></QWatchHistory><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows></QuickWatch><Find-in-Files><ColumnWidth0>761</ColumnWidth0><ColumnWidth1>126</ColumnWidth1><ColumnWidth2>1142</ColumnWidth2><ColumnWidth3>507</ColumnWidth3></Find-in-Files><WATCH_1><expressions><item>sio_rx</item><item>sio_tx</item><item>sio_rx</item><item>SD_Card_Status</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>186</item><item>150</item><item>100</item><item>100</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows></WATCH_1></Static>
+    <StaticWatch><expressions><item>SD_Card_Detect</item><item>SD_Card_Status</item><item>test_days</item><item>sio_rx[4]</item><item>test_days</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>244</item><item>150</item><item>100</item><item>328</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>QuickWatch</Factory></Window><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows></StaticWatch><QuickWatch><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>100</item></col-widths><QWatchHistory><item>s_DateStructVar</item></QWatchHistory><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows></QuickWatch><Find-in-Files><ColumnWidth0>761</ColumnWidth0><ColumnWidth1>126</ColumnWidth1><ColumnWidth2>1142</ColumnWidth2><ColumnWidth3>507</ColumnWidth3></Find-in-Files><WATCH_1><expressions><item>sio_rx</item><item>sio_tx</item><item>sio_rx</item><item>SD_Card_Status</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>186</item><item>150</item><item>100</item><item>100</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows></WATCH_1></Static>
     <Windows>
       
       
       
-    <Wnd3>
+    <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-28407-20448</Identity>
@@ -55,7 +55,7 @@
           </Tab>
         <Tab><Identity>TabID-14063-9759</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-6388-20451</Identity>
@@ -67,20 +67,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd4><Wnd6><Tabs><Tab><Identity>TabID-22638-17786</Identity><TabName>Watch 1</TabName><Factory>WATCH_1</Factory></Tab><Tab><Identity>TabID-17380-25422</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory></Tab></Tabs><SelectedTab>1</SelectedTab></Wnd6><Wnd7><Tabs><Tab><Identity>TabID-30115-26411</Identity><TabName>Disassembly</TabName><Factory>Disassembly</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd7></Windows>
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2><Tabs><Tab><Identity>TabID-22638-17786</Identity><TabName>Watch 1</TabName><Factory>WATCH_1</Factory></Tab><Tab><Identity>TabID-17380-25422</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory></Tab></Tabs><SelectedTab>1</SelectedTab></Wnd2></Windows>
     <Editor>
       
       
       
       
-    <Pane/><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Middlewares\Third_Party\FatFs\src\ff_gen_drv.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>3</YPos2><SelStart2>1917</SelStart2><SelEnd2>1917</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>886</YPos2><SelStart2>31070</SelStart2><SelEnd2>31070</SelEnd2></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\SD_Card.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>12</YPos2><SelStart2>1178</SelStart2><SelEnd2>1187</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\AppMain.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>644</YPos2><SelStart2>17544</SelStart2><SelEnd2>17544</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\stm32f10x_it.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>321</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>586</YPos2><SelStart2>22726</SelStart2><SelEnd2>22726</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-08543D80><key>iaridepm.enu1</key></Toolbar-08543D80></Sizes></Row0><Row1><Sizes><Toolbar-232221F8><key>debuggergui.enu1</key></Toolbar-232221F8></Sizes></Row1><Row2><Sizes><Toolbar-232222C0><key>armstlink2.enu1</key></Toolbar-232222C0></Sizes></Row2></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>585</Bottom><Right>577</Right><x>-2</x><y>-2</y><xscreen>579</xscreen><yscreen>286</yscreen><sizeHorzCX>304097</sizeHorzCX><sizeHorzCY>297297</sizeHorzCY><sizeVertCX>304097</sizeVertCX><sizeVertCY>610187</sizeVertCY></Rect></Wnd4></Sizes></Row0></Left><Right><Row0><Sizes><Wnd6><Rect><Top>-2</Top><Left>-2</Left><Bottom>585</Bottom><Right>756</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>105042</sizeHorzCX><sizeHorzCY>207900</sizeHorzCY><sizeVertCX>398109</sizeVertCX><sizeVertCY>610187</sizeVertCY></Rect></Wnd6></Sizes></Row0><Row1><Sizes><Wnd7><Rect><Top>-2</Top><Left>754</Left><Bottom>585</Bottom><Right>954</Right><x>754</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>105042</sizeHorzCX><sizeHorzCY>207900</sizeHorzCY><sizeVertCX>105042</sizeVertCX><sizeVertCY>610187</sizeVertCY></Rect></Wnd7></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>284</Bottom><Right>1906</Right><x>-2</x><y>-2</y><xscreen>1908</xscreen><yscreen>286</yscreen><sizeHorzCX>1002101</sizeHorzCX><sizeHorzCY>297297</sizeHorzCY><sizeVertCX>304097</sizeVertCX><sizeVertCY>297297</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-08AC4168><key>iaridepm.enu1</key></Toolbar-08AC4168></Sizes></Row0><Row1><Sizes><Toolbar-25F7D838><key>debuggergui.enu1</key></Toolbar-25F7D838></Sizes></Row1><Row2><Sizes><Toolbar-25F7D9C8><key>armstlink2.enu1</key></Toolbar-25F7D9C8></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>863</Bottom><Right>776</Right><x>-2</x><y>-2</y><xscreen>778</xscreen><yscreen>403</yscreen><sizeHorzCX>303906</sizeHorzCX><sizeHorzCY>296979</sizeHorzCY><sizeVertCX>303906</sizeVertCX><sizeVertCY>637436</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>863</Bottom><Right>1017</Right><x>-2</x><y>-2</y><xscreen>269</xscreen><yscreen>282</yscreen><sizeHorzCX>105078</sizeHorzCX><sizeHorzCY>207811</sizeHorzCY><sizeVertCX>398047</sizeVertCX><sizeVertCY>637436</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>401</Bottom><Right>2562</Right><x>-2</x><y>-2</y><xscreen>2564</xscreen><yscreen>403</yscreen><sizeHorzCX>1001562</sizeHorzCX><sizeHorzCY>296979</sizeHorzCY><sizeVertCX>303906</sizeVertCX><sizeVertCY>296979</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 
