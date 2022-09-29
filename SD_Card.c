@@ -25,7 +25,7 @@ void SD_Card_Init(void)
 {
     /* FATFS Init */
     MX_FATFS_Init();
-
+    
     /* Mount SD Card */
     SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_ENABLE);
     Delay_ms(10);
@@ -73,7 +73,7 @@ void SD_Card_Data_Write(void)
 
 static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,uint16_t hours,uint16_t minutes,uint16_t seconds,uint8_t *data,uint16_t length)
 {
-    static uint16_t hours_old;
+    static uint16_t hours_old,day_old;
     static uint8_t SD_Card_Detect_Old;
     char filename[20] = {0,};
     int8_t retType = 0;
@@ -90,7 +90,7 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
 
     if(SD_Card_Detect == SD_CARD_INSERTED)
     {
-        if((hours_old != hours)&&(SD_Card_FirstCall == 0))
+        if(((hours_old != hours)||(day_old != day))&&(SD_Card_FirstCall == 0))
         {
             SD_Card_Writeflag = 2;
         }
@@ -100,7 +100,7 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
             SD_Card_FirstCall = 0;
             SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_ENABLE);
             sprintf(filename,"%04d%02d%02d.txt", year, month, day);  // 날짜 이름으로 "yyyymmdd.txt" 파일 생성 
-
+            Delay_ms(100);
             SD_Card_Status = f_open(&fil, (char*)filename , FA_CREATE_NEW | FA_WRITE | FA_READ);
             if(SD_Card_Status == FR_EXIST)
             {
@@ -121,6 +121,15 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
                     SD_Card_Status = f_lseek(&fil,f_size(&fil));                               
                 }   
             }
+            else if(SD_Card_Status == FR_NOT_READY)
+            {
+                Delay_ms(100);
+                SD_disk_initialize(0);                    
+                SD_disk_initialize(0);                    
+                SD_disk_initialize(0);
+                SD_Card_Status = f_open(&fil, (char*)filename , FA_OPEN_ALWAYS | FA_WRITE | FA_READ);                    
+            }
+            
             SD_Card_ChipSelect(SD_CARD_CHIP_SELECT_DISABLE);
         
             SD_Card_Writeflag = 1;
@@ -163,6 +172,7 @@ static void SD_Card_Data_Write_Time(uint16_t year,uint16_t month,uint16_t day,ui
         }
 
         hours_old = hours;
+        day_old = day;
     }
 }
 
